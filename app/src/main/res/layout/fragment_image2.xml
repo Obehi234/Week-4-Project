@@ -6,33 +6,30 @@
     android:layout_height="90dp"
     tools:context=".Image2Fragment">
 
-<!--    <ImageView-->
-<!--        android:id="@+id/blue_rectangle"-->
-<!--        android:layout_width="240dp"-->
-<!--        android:layout_height="90dp"-->
-<!--        android:src="@drawable/rectangle_22" />-->
+    <ImageView
+        android:id="@+id/blue_rectangle"
+        android:layout_width="240dp"
+        android:layout_height="90dp"
+        android:src="@drawable/rectangle_22"
+        android:contentDescription="@string/blue_rectangle" />
 
-<!--    <ImageView-->
-<!--        android:id="@+id/card_num"-->
-<!--        android:layout_width="17dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginStart="120dp"-->
-<!--        android:layout_marginTop="25dp"-->
-<!--        android:layout_marginEnd="30dp"-->
-<!--        android:src="@drawable/card_no" />-->
+    <ImageView
+        android:id="@+id/card_num"
+        android:layout_width="17dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="30dp"
+        android:src="@drawable/card_no"
+        android:contentDescription="@string/card_number" />
 
-<!--    <ImageView-->
-<!--        android:id="@+id/visa"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginStart="110dp"-->
-<!--        android:layout_marginTop="47dp"-->
-<!--        android:src="@drawable/visa" />-->
+    <ImageView
+        android:id="@+id/visa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="47dp"
+        android:src="@drawable/visa"
+        android:contentDescription="@string/visa" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textColor="@color/black"
-        android:textSize="50dp"
-        android:text="GFG 2" />
 </FrameLayout>

@@ -14,26 +14,12 @@ class PageAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
     override fun getItem(position: Int): Fragment {
         when (position) {
             0 -> return Image1Fragment()
-            1 -> return Image2Fragment()
-            2 -> return Image3Fragment()
+            1 -> return Image3Fragment()
+            2 -> return Image2Fragment()
             else -> return Image1Fragment()
         }
     }
 
-    override fun getPageTitle(position: Int): CharSequence? {
-        when(position) {
-            0 -> {
-                return "Tab 1"
-            }
-            1 -> {
-                return "Tab 2"
-            }
-            2 -> {
-                return "Tab 3"
-            }
-        }
-        return super.getPageTitle(position)
-    }
 }
 
 

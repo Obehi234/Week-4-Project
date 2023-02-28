@@ -6,66 +6,67 @@
     android:layout_height="110dp"
     tools:context=".Image3Fragment">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textColor="@color/black"
-        android:textSize="50dp"
-        android:text="GFG 3" />
 
-<!--    <ImageView-->
-<!--        android:id="@+id/red_rectangle"-->
-<!--        android:layout_width="240dp"-->
-<!--        android:layout_height="110dp"-->
-<!--        android:src="@drawable/rectangle_21" />-->
+    <ImageView
+        android:id="@+id/red_rectangle"
+        android:layout_width="240dp"
+        android:layout_height="110dp"
+        android:src="@drawable/rectangle_21"
+        android:contentDescription="@string/red_rectangle"/>
 
-<!--    <ImageView-->
-<!--        android:id="@+id/daro_text"-->
-<!--        android:layout_marginTop="25dp"-->
-<!--        android:layout_marginStart="18dp"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:src="@drawable/darot" />-->
+    <ImageView
+        android:id="@+id/daro_text"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/darot"
+        android:contentDescription="@string/daro_text"/>
 
-<!--    <ImageView-->
-<!--        android:id="@+id/debit_card_text"-->
-<!--        android:layout_width="40dp"-->
-<!--        android:layout_height="10dp"-->
-<!--        android:layout_marginTop="40dp"-->
-<!--        android:layout_marginStart="18dp"-->
-<!--        android:src="@drawable/debit_card" />-->
+    <ImageView
+        android:id="@+id/debit_card_text"
+        android:layout_width="40dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="18dp"
+        android:src="@drawable/debit_card"
+        android:contentDescription="@string/debit_card_text"/>
 
-<!--    <ImageView-->
-<!--        android:id="@+id/dollar_sign"-->
-<!--        android:layout_width="9dp"-->
-<!--        android:layout_height="17dp"-->
-<!--        android:layout_marginTop="68dp"-->
-<!--        android:layout_marginStart="18dp"-->
-<!--        android:src="@drawable/dollar_sign" />-->
+    <ImageView
+        android:id="@+id/dollar_sign"
+        android:layout_width="9dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginStart="18dp"
+        android:src="@drawable/dollar_sign"
+        android:contentDescription="@string/dollar_sign"/>
 
-<!--    <ImageView-->
-<!--        android:id="@+id/sika"-->
-<!--        android:layout_width="98dp"-->
-<!--        android:layout_height="17dp"-->
-<!--        android:layout_marginStart="34dp"-->
-<!--        android:layout_marginTop="68dp"-->
-<!--        android:src="@drawable/sika" />-->
+    <ImageView
+        android:id="@+id/sika"
+        android:layout_width="98dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="68dp"
+        android:src="@drawable/sika"
+        android:contentDescription="@string/money_numerical_value"/>
 
-<!--    <ImageView-->
-<!--        android:id="@+id/card_num"-->
-<!--        android:layout_width="17dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginStart="180dp"-->
-<!--        android:layout_marginTop="40dp"-->
-<!--        android:layout_marginEnd="30dp"-->
-<!--        android:src="@drawable/card_no" />-->
+    <ImageView
+        android:id="@+id/card_num"
+        android:layout_width="17dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:src="@drawable/card_no"
+        android:contentDescription="@string/card_number"/>
 
-<!--    <ImageView-->
-<!--        android:id="@+id/visa"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginStart="180dp"-->
-<!--        android:layout_marginTop="68dp"-->
-<!--        android:src="@drawable/visa" />-->
+    <ImageView
+        android:id="@+id/visa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="68dp"
+        android:src="@drawable/visa"
+        android:contentDescription="@string/visa"/>
 
 </FrameLayout>
