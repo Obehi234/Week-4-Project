@@ -20,11 +20,11 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         var fragment: Fragment = when(item.itemId) {
-            R.id.productsFragment ->  Product()
-            R.id.paymentsFragment ->  Payments()
-            R.id.historyFragment -> History()
-            R.id.supportFragment -> Support()
-            R.id.moreFragment -> More()
+            R.id.navigation_products ->  Product()
+            R.id.navigation_payments ->  Payments()
+            R.id.navigation_history -> History()
+            R.id.navigation_support -> Support()
+            R.id.navigation_more -> More()
             else -> Product()
         }
         loadFragment(fragment)
