@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="viewpager_page_margin">20dp</dimen>
+    <dimen name="pageMargin">20dp</dimen>
+    <dimen name="pagerOffset">30dp</dimen>
+    <dimen name="pageMarginAndoffset">50dp</dimen>
+    <dimen name="fragment_card_width">240dp</dimen>
+    <dimen name="viewPager_margin_bottom">30dp</dimen>
+    <dimen name="darot_text_width">40dp</dimen>
+    <dimen name="darot_text_height">17dp</dimen>
+    <dimen name="margin_start">18dp</dimen>
+    <dimen name="darot_text_margin_top">25dp</dimen>
+    <dimen name="darot_text_size">14sp</dimen>
+    <dimen name="debit_text_width">40dp</dimen>
+    <dimen name="debit_text_height">10dp</dimen>
+    <dimen name="debit_text_margin_start">19dp</dimen>
+    <dimen name="debit_margin_top">1dp</dimen>
+    <dimen name="debit_text_size">8sp</dimen>
+    <dimen name="dollar_sign_margin_start">19dp</dimen>
+    <dimen name="dollar_margin_top">11dp</dimen>
+    <dimen name="money_margin_start">8dp</dimen>
+    <dimen name="money_text_size">14sp</dimen>
+    <dimen name="visa_margin_top">65dp</dimen>
+    <dimen name="visa_text_size">12sp</dimen>
+    <dimen name="visa_margin_end">30dp</dimen>
+    <dimen name="badge_num_margin_num">43dp</dimen>
+    <dimen name="badge_num_margin_end">30dp</dimen>
+    <dimen name="badge_num_text_size">8sp</dimen>
+    <dimen name="fragment_margin_bottom">30dp</dimen>
+    <dimen name="view_card_radius">10dp</dimen>
+    <dimen name="view_card_elevation">4dp</dimen>
+
+</resources>

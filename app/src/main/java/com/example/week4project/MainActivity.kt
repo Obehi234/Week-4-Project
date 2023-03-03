@@ -4,10 +4,15 @@ import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.viewpager2.widget.CompositePageTransformer
+import androidx.viewpager2.widget.MarginPageTransformer
+import androidx.viewpager2.widget.ViewPager2
 import com.example.week4project.navFragment.*
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import kotlin.math.abs
 
 class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -18,8 +23,10 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         loadFragment(Product())
         }
 
+
+
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        var fragment: Fragment = when(item.itemId) {
+        val fragment: Fragment = when(item.itemId) {
             R.id.navigation_products ->  Product()
             R.id.navigation_payments ->  Payments()
             R.id.navigation_history -> History()

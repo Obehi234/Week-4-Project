@@ -44,4 +44,8 @@
     <string name="welcome_to_payments_fragment">Welcome to Payments Fragment</string>
     <string name="welcome_to_support_fragment">Welcome to Support Fragment</string>
     <string name="welcome_to_history_fragment">Welcome to History Fragment</string>
+    <string name="darot">Darot</string>
+    <string name="debit_card">Debit card</string>
+    <string name="moneyValue">23,481,000.00</string>
+    <string name="_4321">4321</string>
 </resources>

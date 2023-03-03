@@ -9,9 +9,11 @@
 
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/relativelayout"
-                android:layout_marginBottom="60dp"
+                android:layout_marginBottom="@dimen/fragment_margin_bottom"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:name="com.example.week4project.navFragment.Product"
+                tools:layout="@layout/activity_main" />
 
 
        <com.google.android.material.bottomnavigation.BottomNavigationView

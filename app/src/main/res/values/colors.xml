@@ -7,4 +7,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="fragment3_bg">#009CAA</color>
+    <color name="fragment_2bg">#054AB4</color>
+    <color name="fragment_1bg">#C9082A</color>
+    <color name="debit_text_color">#fafafa</color>
+    <color name="darot_text_color">#ffffff</color>
 </resources>

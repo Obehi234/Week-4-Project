@@ -2,21 +2,22 @@ package com.example.week4project
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.FragmentPagerAdapter
+import androidx.lifecycle.Lifecycle
+import androidx.viewpager2.adapter.FragmentStateAdapter
 
 
-class PageAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
+class PageAdapter(fm: FragmentManager, lifecycle: Lifecycle) : FragmentStateAdapter(fm, lifecycle) {
 
-    override fun getCount(): Int {
+    override fun getItemCount(): Int {
         return 3
     }
 
-    override fun getItem(position: Int): Fragment {
-        when (position) {
-            0 -> return Image1Fragment()
-            1 -> return Image3Fragment()
-            2 -> return Image2Fragment()
-            else -> return Image1Fragment()
+    override fun createFragment(position: Int): Fragment {
+        return when (position) {
+            0 -> Image2Fragment()
+            1 -> Image1Fragment()
+            2 -> Image3Fragment()
+            else -> Image1Fragment()
         }
     }
 

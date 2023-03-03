@@ -1,35 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="240dp"
-    android:layout_height="90dp"
-    tools:context=".Image2Fragment">
+    android:id="@+id/card_view"
+    android:layout_width="@dimen/fragment_card_width"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:backgroundTint="@color/fragment_2bg"
+    android:elevation="@dimen/view_card_elevation"
+    app:cardCornerRadius="@dimen/view_card_radius"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <ImageView
-        android:id="@+id/blue_rectangle"
-        android:layout_width="240dp"
-        android:layout_height="90dp"
-        android:src="@drawable/rectangle_22"
-        android:contentDescription="@string/blue_rectangle" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/viewPager_margin_bottom">
+        <TextView
+            android:id="@+id/darot_text"
+            android:layout_width="@dimen/darot_text_width"
+            android:layout_height="@dimen/darot_text_height"
+            android:layout_marginStart="@dimen/margin_start"
+            android:layout_marginTop="@dimen/darot_text_margin_top"
+            android:text="@string/darot"
+            android:textAlignment="center"
+            android:textColor="@color/darot_text_color"
+            android:textSize="@dimen/darot_text_size"
+            android:fontFamily="@font/montserrat"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck,TextSizeCheck" />
 
-    <ImageView
-        android:id="@+id/card_num"
-        android:layout_width="17dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="30dp"
-        android:src="@drawable/card_no"
-        android:contentDescription="@string/card_number" />
+        <TextView
+            android:id="@+id/debit_text"
+            android:layout_width="@dimen/debit_text_width"
+            android:layout_height="@dimen/debit_text_height"
+            android:layout_marginStart="@dimen/debit_text_margin_start"
+            android:layout_marginTop="@dimen/debit_margin_top"
+            android:text="@string/debit_card"
+            android:textAlignment="center"
+            android:textColor="@color/debit_text_color"
+            android:textSize="@dimen/debit_text_size"
+            android:fontFamily="@font/montserrat"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/darot_text"
+            tools:ignore="SmallSp,TextContrastCheck,TextSizeCheck" />
 
-    <ImageView
-        android:id="@+id/visa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="110dp"
-        android:layout_marginTop="47dp"
-        android:src="@drawable/visa"
-        android:contentDescription="@string/visa" />
+        <ImageView
+            android:id="@+id/dollar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dollar_sign_margin_start"
+            android:layout_marginTop="@dimen/dollar_margin_top"
+            app:layout_constraintBaseline_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/debit_text"
+            android:src="@drawable/dollar_sign"
+            android:contentDescription="@string/dollar_sign"/>
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/money_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/money_margin_start"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/moneyValue"
+            android:textColor="@color/darot_text_color"
+            android:textSize="@dimen/money_text_size"
+            app:layout_constraintStart_toEndOf="@+id/dollar"
+            app:layout_constraintTop_toTopOf="@+id/dollar" />
+
+        <TextView
+            android:id="@+id/visa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/visa_margin_top"
+            android:text="@string/visa"
+            android:textColor="@color/darot_text_color"
+            android:textSize="@dimen/visa_text_size"
+            android:textStyle="italic"
+            android:textFontWeight="700"
+            android:layout_marginEnd="@dimen/visa_margin_end"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:fontFamily="@font/montserrat"
+            />
+
+        <TextView
+            android:id="@+id/badge_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/badge_num_margin_num"
+            android:layout_marginEnd="@dimen/badge_num_margin_end"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/_4321"
+            android:textColor="@color/darot_text_color"
+            android:textSize="@dimen/badge_num_text_size"
+            android:textFontWeight="500"
+            android:fontFamily="@font/montserrat"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
